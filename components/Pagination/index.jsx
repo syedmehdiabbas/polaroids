@@ -4,7 +4,7 @@ import Button from "../Button";
 const Pagination = ({ page, setPage, totalPages }) => {
   return (
     totalPages && (
-      <div className="flex w-full flex-wrap justify-around items-center mt-20">
+      <div className="flex flex-col md:flex-row items-center gap-4 w-full flex-wrap justify-around items-center mt-20">
         <Button onClick={() => setPage((p) => p - 1)} isDisabled={page <= 1}>
           Prev
         </Button>
@@ -13,8 +13,7 @@ const Pagination = ({ page, setPage, totalPages }) => {
         </span>
         <Button
           onClick={() => setPage((p) => p + 1)}
-          isDisabled={page >= totalPages}
-        >
+          isDisabled={page >= totalPages}>
           Next
         </Button>
       </div>

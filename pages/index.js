@@ -62,7 +62,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Polaroids</title>
+        <title>Find Polaroids</title>
+        <link rel="icon" type="image/x-icon" href="https://fav.farm/📸" />
       </Head>
       <SearchBox
         query={query}
